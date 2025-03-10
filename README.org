@@ -1,0 +1,17 @@
+To install the version of [[https://github.com/richardpaulhudson/coreferee][coreferee]] library with support for Russian,
+follow steps outlined in =install_coreferee_ru.sh=.
+
+The environment is managed by =uv=. To install =uv= follow the
+[[https://docs.astral.sh/uv/getting-started/installation/][official instructions]] or uncomment the first line in
+=install_coreferee_ru.sh= to try installing =uv= with =wget=.
+
+Here is what will happen:
+
+1. You will recreate a =.venv= in this repository and activate it;
+2. You will clone [[https://github.com/posavinova/coreferee/tree/dd238ff15cb049059fa1b0b02e740eacf6301bc1][a specific fork]] of =coreferee= into the parent
+   directory (relative to this directory);
+3. You will switch into the cloned version of the library and install
+   support for Russian.
+
+Hopefully, all this will become unnecessary when [[https://github.com/richardpaulhudson/coreferee/pull/33][this PR]] is accepted.
+   
